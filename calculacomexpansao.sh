@@ -13,7 +13,7 @@ echo "Data Nasc.: ${DATA_NASCIMENTO:?deve informar data de nascimento\!}"
 
 # Calcular a idade
 
-ANO_DATA_NASCIMENTO=$(echo $DATA_NASCIMENTO | cut -d"/" -f3)
+ANO_DATA_NASCIMENTO=${DATA_NASCIMENTO##*/}
 ANO_ATUAL=$(date +%Y)
 IDADE=$(echo "$ANO_ATUAL-$ANO_DATA_NASCIMENTO" | bc -l)
 
