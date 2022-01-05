@@ -1,0 +1,18 @@
+echo  $(var:8} começa imprimir desde o otavo caracter
+echo =${var:8} altera o valor da variavel, corta e fica só desde o terceiro caacter
+echo ${#var} imprime o comprimento da variavel 
+echo $(var:0:8} imprime desde posição 0 ate otava posição
+echo ${var/exemplo/sustitui} var sustitiui parte da variavel
+echo ${var/ /} apaga o primeiro espaço em branco
+echo ${var// /}apaga todos os espaços em branco 
+echo ${file##*.} apaga  todo o que estiver antes da extensão
+echo ${file%%.*} imprime o nome do arquivo sem extensão
+echo ${file~} imprime  mudando  o Case o primeiro caracter
+echo ${file~~} imprime mudando o case de todos os caracteres
+echo ${file^} imprime primeiro em maiusculas
+echo ${var:~ Mensagem que mostra quando a variavel estiver vazia}
+echo ${var:+ Mensagem que mostra que a Variavel tem um valor}
+echo ${var:=valor padrão} se estiver vazia va atribuir valor padrão
+echo ${var:?Mensagem de erro\!}
+ 
+
